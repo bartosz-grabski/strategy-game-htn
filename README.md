@@ -67,3 +67,27 @@ I maintained a naming convention where complex tasks had the _task suffix, while
 ## Example output ##
 
 Town should hava a barracks and a watchtower
+
+```
+depth 1 tasks [('build_barracks_task',), ('build_watchtower_task',)]
+depth 2 tasks [('gather_wood_task',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 3 tasks [('gather_wood',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 4 tasks [('build_barracks_task',), ('build_watchtower_task',)]
+depth 5 tasks [('build_barracks',), ('build_watchtower_task',)]
+depth 6 tasks [('build_watchtower_task',)]
+depth 7 tasks [('train_peon_task',), ('build_watchtower_task',)]
+depth 7 tasks [('gather_gold_task',), ('build_watchtower_task',)]
+depth 3 tasks [('train_peon_task',), ('gather_wood_task',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 4 tasks [('train_peon',), ('gather_wood_task',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 5 tasks [('gather_wood_task',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 6 tasks [('gather_wood',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 7 tasks [('build_barracks_task',), ('build_watchtower_task',)]
+depth 8 tasks [('gather_gold_task',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 9 tasks [('gather_gold',), ('build_barracks_task',), ('build_watchtower_task',)]
+depth 10 tasks [('build_barracks_task',), ('build_watchtower_task',)]
+depth 11 tasks [('build_barracks',), ('build_watchtower_task',)]
+depth 12 tasks [('build_watchtower_task',)]
+depth 13 tasks [('build_watchtower',)]
+depth 14 tasks []
+** result = [('train_peon',), ('gather_wood',), ('gather_gold',), ('build_barracks',), ('build_watchtower',)] 
+```
