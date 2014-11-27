@@ -12,11 +12,7 @@ GATHER_WOOD = 100
 
 
 
-def build_town(state):
-	print state
-	return [('build_barracks_task',),('build_watchtower_task',),('build_watchtower_task',),('build_barracks_task',)]
 
-pyhop.declare_methods('build_town',build_town)
 
 def build_barracks_task_a(state):
 	if state.gold >= BARRACKS_COST_GOLD and state.wood >= BARRACKS_COST_WOOD and state.peons > 0:

@@ -14,7 +14,7 @@ state1.wood = 20
 
 def build_town(state):
 	print state
-	return [('build_barracks_task',),('build_watchtower_task',),('build_watchtower_task',),('build_barracks_task',),('build_barracks_task',)]
+	return [('build_barracks_task',),('build_watchtower_task',)]
 
 pyhop.declare_methods('build_town',build_town)
 
