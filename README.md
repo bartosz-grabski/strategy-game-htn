@@ -4,7 +4,13 @@ This project was created to demonstrate a simple example of using HTN planning. 
 
 https://bitbucket.org/dananau/pyhop
 
-Our goal is to build a small town. Number of buildings is defined by us
+Our goal is to build a small town. Number of buildings is defined by us by declaring tasks in 'build_town' complex task
+
+```python
+def build_town(state):
+	print state
+	return [('build_barracks_task',),('build_watchtower_task',)]
+```
 
 ## Domain ##
 
